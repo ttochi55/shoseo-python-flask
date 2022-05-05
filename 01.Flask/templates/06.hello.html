@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    {% if name %} hello {{ name | upper() }} {% else %} hello world {% endif %}
+
+    <br />
+
+    <ul>
+      {% for key, value in dt.items() %}
+      <li>{{ key }} : {{ value }}</li>
+      {% endfor %}
+    </ul>
+
+    <br />
+
+    {{ item | default('item is not defined.') }}
+
+    <br />
+
+    {% if template_variable == 'Hello' %}
+    <p>{{ template_variable }}, World!</p>
+    {% else %}
+    <p>template_variable is not 'Hello'.</p>
+    {% endif %}
+
+    <ul>
+      {% for x in range(10) %}
+      <li>{{ x }}</li>
+      {% endfor %}
+    </ul>
+
+    <br />
+
+    {{ dt.key1, dt['key2'] }}
+  </body>
+</html>

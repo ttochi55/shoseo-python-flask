@@ -1,0 +1,17 @@
+{
+  "trailingComma": "all",
+  "useTabs": false,
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "prettier.arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.overrides",
+      "options": {
+        "parser": "less"
+      }
+    }
+  ]
+}

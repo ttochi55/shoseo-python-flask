@@ -1,1 +1,1 @@
-# academy-shoseo-python-flask
+# Python flask web
